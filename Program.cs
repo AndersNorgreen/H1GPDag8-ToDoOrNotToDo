@@ -1,10 +1,16 @@
-﻿namespace H1GPDag8
+﻿using static System.Console;
+
+namespace H1GPDag8
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ToDoItem.AddFakeTodos();
+            ToDoMenu main = new ToDoMenu();
+
+            main.MainMenu();
+            ReadKey();
         }
     }
 }
